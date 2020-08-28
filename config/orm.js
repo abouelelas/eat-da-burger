@@ -1,5 +1,5 @@
 // Import MySQL connection.
-var connection = require("./connection.js");
+var connection = require("./connection");
 
 // Helper function for SQL syntax.
 // Let's say we want to pass 3 values into the mySQL query.
@@ -50,32 +50,14 @@ var orm = {
       cb(result);
     });
   },
-  read: function(tableInput, cb) {
-    var queryString = "SELECT * FROM ??;";
-    connection.query(queryString, [tableInput], function(err, result) {
-      if (err) {
-        throw err;
-      }
-      cb(result);
-    });
-  },
-  readOne: function(tableInput, dataConditions, cb) {
-    var queryString = "SELECT * FROM ?? WHERE ?";
-    connection.query(queryString, [tableInput, dataConditions], function(err, result) {
-      if (err) {
-        throw err;
-      }
-      cb(result);
-    });
-  },
   create: function(table, cols, vals, cb) {
     var queryString = "INSERT INTO " + table;
 
     queryString += " (";
-    queryString += cols.toString(); // ["name", "devour"] = toString => "name, devour"
+    queryString += cols.toString();
     queryString += ") ";
     queryString += "VALUES (";
-    queryString += printQuestionMarks(vals.length); // length is a property of an array
+    queryString += printQuestionMarks(vals.length);
     queryString += ") ";
 
     console.log(queryString);
@@ -121,5 +103,5 @@ var orm = {
   }
 };
 
-// Export the orm object for the model (cat.js).
+// Export the orm object for the model (burger.js).
 module.exports = orm;
