@@ -1,0 +1,28 @@
+{
+  "name": "eat-da-burger",
+  "version": "1.0.0",
+  "description": "creates a restaurant app that lets users input the names of burgers they'd like to eat  Node Express Handlebars",
+  "main": "server.js",
+  "dependencies": {
+    "express-handlebars": "^5.1.0",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1",
+    "orm": "^5.0.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abouelelas/eat-da-burger.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/abouelelas/eat-da-burger/issues"
+  },
+  "homepage": "https://github.com/abouelelas/eat-da-burger#readme"
+}
