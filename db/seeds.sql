@@ -1,4 +1,4 @@
-USE burgers_db;
+-- USE burgers_db;
 
 INSERT INTO burgers (name) VALUES ('Doublecheese');
 INSERT INTO burgers (name) VALUES ('Sara-tonin');
