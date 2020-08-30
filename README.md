@@ -20,14 +20,15 @@ Folder organization and structure follows MVC framework.
 (Eat da Burger)[https://github.com/abouelelas/eat-da-burger]
 
 ## Heroku link
-(Eat da Burger)[https://git.peaceful-escarpment-17183.giteroku.com/]
+(Eat da Burger)[https://peaceful-escarpment-17183.herokuapp.com]
 - - -
 
 ### Add To Your Portfolio
 
 Here is the link to my portfolio with added link to Eat da burger.
-(Eat da Burger)[]
+(Eat da Burger)[https://abouelelas.github.io/sarah-portfolio/]
 
+![Application Screenshot](https://github.com/abouelelas/eat-da-burger/blob/master/public/images/EatdaburgerSS.png)
 - - -
 
 
